@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nelson Almeida de Oliveira</title>
+    <!-- Estilos CSS -->
+    <style>        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            overflow-x: hidden; /* A barra de rolagem horizontal é ocultada */
+        }
+            
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 10px;
+            text-align: center;            
+            width: 100%;
+            height: 60px;
+            top: 0;
+            z-index: 999;
+        }
+            
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+            
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+            
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        main {
+            padding: 70px 20px 20px; 
+            margin-top: 60px; 
+            background-color: #cfdbe5;
+        }
+        
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #fff; 
+        }
+        
+        .button {
+            background-color: #3498db; 
+            color: #fff; /* Cor do texto */
+            padding: 10px 20px; /* Espaçamento interno */
+            border: none; /* A borda é removida */
+            border-radius: 5px; /* Bordas arredondadas */
+            cursor: pointer; /* O cursor muda ao passar */
+            transition: background-color 0.3s; /* Transição suave de cor de fundo */
+            width: auto; /* Define a largura do botão */
+            max-width: 100%;
+            margin-right: 20px; /* Margem direita para os botões */
+            font-weight: bold; /* Texto em negrito */
+        }
+            
+        .button:hover {
+            background-color: #1e3746; /* Cor de fundo ao passar o mouse */
+        }
+       
+        /* Estilo para o container dos anúncios.Flexbox para organizar os elementos em uma linha flexível.*/
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+            
+        .anuncio_img {
+            width: calc(33.33% - 20px); /*  Define a largura de cada anúncio como um terço do contêiner, com uma margem à direita de 20px. */
+            margin-bottom: 20px;
+        }
+        
+        .anuncio_img-content {
+            text-align: center;
+        }
+            
+        .anuncio_img img {
+            max-width: 30%; 
+            height: auto; /* Permite que a altura da imagem seja ajustada automaticamente para manter a proporção */
+        }
+       
+        .portfolio-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Estilo para o parágrafo dentro do botão do portfólio */
+        .portfolio-button p {
+            margin-bottom: 10px;
+        }
+            
+        footer {
+            background-color: #2c3e50; 
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+            
+        #links {            
+            position: fixed;
+            background-color: #2c3e50; 
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            z-index: 998;
+            transition: top 0.3s;
+        }
+            
+        #links a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        
+        #conteudo {
+            margin-top: -10px; /* Compensar a altura do cabeçalho fixo */
+        }
+            
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            display: block;
+            margin-bottom: 10px; 
+            width: calc(50% - 5px); 
+        }
+            
+        input[type="submit"] {
+            width: auto
+            max-width 100%;
+        }
+    
+    </style>
+    
+</head>
+<body>    
+    <div id="topo"></div>
+    <header>        
+        <h1>Nelson Almeida de Oliveira</h1>            
+    </header>
+    
+    <div id="links">
+        <nav>
+            <ul>
+                <!-- Links de navegação -->
+                <li><a href="#topo">Início</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação Educacional</a></li>
+                <li><a href="#experiencia">Experiência Profissional</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>                
+                <li><a href="#contato">Contato</a></li>                
+            </ul>
+        </nav>
+    </div>
+    
+    <main id="conteudo">
+              
+        <section id="sobre">
+            <h2 style="font-family: Arial, sans-serif;">Sobre Mim</h2>           
+            <p>Entusiasta da tecnologia, sou analista de sistemas e criador de anúncios para redes sociais além de ser também motorista. Tenho paixão por sistemas operacionais, linguagens de programação, software livre, bancos de dados e literatura.</p>
+            <p>Adoro escrever nas horas vagas e acredito que o aprendizado deve ser sempre linear.
+            Saltar etapas pode criar lacunas, semelhantes aos dentes faltantes de uma engrenagem, onde a ausência de um elemento crucial pode levar ao colapso toda uma operação, ou como deixar páginas em branco num livro, o que comprometeria a intenção do texto de transmitir uma mensagem clara.
+            <p>Portanto, é essencial dedicar-se a cada etapa do processo se quisermos alcançar os objetivos maiores.</p>
+        </section>
+                
+        <section id="formacao">
+            <h2>Formação Educacional</h2>            
+            <div class="curso">
+                <h3>Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas</h3>
+                <p>
+                    <span>Instituição:</span> Centro Universitário Internacional UNINTER<br>
+                    <span>Status:</span> Cursando<br>
+                    <span>Previsão de Conclusão:</span> Abril de 2025
+                </p>
+            </div>
+            <div class="curso">
+                <h3>Ensino Médio Completo</h3>
+                <p>
+                    <span>Instituição:</span> Escola Técnica Estadual Rubens de Faria e Souza<br>
+                    <span>Curso:</span> Auxiliar Técnico em Mecânica<br>
+                    <span>Data de Conclusão:</span> dezembro de 1997
+                </p>
+            </div>
+        </section>
+                
+        <section id="experiencia">
+            <h2>Experiência Profissional</h2>            
+            <div class="experiencia">
+                <h3>Elza Pereira Bueno EPP – Loja Acácia – Ibiúna SP</h3>
+                <p>
+                    <span>Data:</span> Junho de 2022 – Presente<br>
+                    <span>Cargo:</span> Motorista Particular e Assistente Administrativo<br>
+                    <span>Responsabilidades:</span><br>
+                    - Responsável por viagens a Campinas, Grande São Paulo, Região de Sorocaba e litoral.<br>
+                    - Gestão de estoque, crediário e contas a pagar e a receber.<br>
+                    - Criação de anúncios para redes sociais utilizando Inkscape.<br>
+                    - Realização de compras e retirada de mercadorias na região do Brás – SP.
+                </p>
+            </div>
+            <div class="experiencia">
+                <h3>Lucimar Rodrigues Campos ME – Loja Dalu Modas – Ibiuna SP</h3>
+                <p>
+                    <span>Data:</span> Novembro de 2018 a Janeiro de 2022<br>
+                    <span>Cargo:</span> Assistente Administrativo e Pacotes<br>
+                    <span>Responsabilidades:</span><br>
+                    - Gerenciamento do fluxo de caixa e estoque.<br>
+                    - Organização do crediário e contas a receber e a pagar.<br>
+                    - Criação de anúncios para redes sociais utilizando Inkscape e Corel Draw.<br>
+                    - Compras e retirada de mercadorias na região do Brás - SP.
+                </p>
+            </div>
+            <div class="experiencia">
+                <h3>Eletrofone Telecomunicações – Loja Vivo – Ibiúna SP</h3>
+                <p>
+                    <span>Data:</span> Março de 2006 a Novembro 2017<br>
+                    <span>Cargo:</span> Gerente<br>
+                    <span>Responsabilidades:</span><br>
+                    - Atendimento a clientes e ativação de linhas telefônicas e internet.<br>
+                    - Gestão de planilhas em Excel para controle de vendas.<br>
+                    - Programação de equipamentos de PABX e suporte pós-venda.<br>
+                    - Compras e retirada de equipamentos na região da Grande São Paulo.
+                </p>
+            </div>
+        </section>
+                
+        <section id="portfolio">
+            <h2>Portfólio</h2>
+            <p>Criação de Anúncios e Logotipos</p>
+            <!-- Pré-visualização do portfólio -->
+            <div class="portfolio-preview">
+                <div class="container">
+                    <div class="anuncio_img">
+                        <div class="anuncio_img-content">
+                            <img src="imagens/Crianças.jpg" alt="Anúncio para redes sociais">                                                        
+                        </div>
+                    </div>
+                    <div class="anuncio_img">
+                        <div class="anuncio_img-content">
+                            <img src="imagens/black.jpg" alt="Anúncio para redes sociais">                            
+                        </div>
+                    </div>
+                    <div class="anuncio_img">
+                        <div class="anuncio_img-content">
+                            <img src="imagens/image190.png" alt="Anúncio para redes sociais">                            
+                        </div>            
+                    </div>
+                </div>
+            </div>
+            <!-- Botão para o portfólio completo -->
+            <div class="portfolio-button">
+                <p>Confira o portfólio completo:</p>
+                <button class="button" onclick="window.location.href='pg_anuncio1.html'">Portfólio Completo</button>
+            </div>
+        </section>       
+        
+        <section id="contato">
+            <h2>Contato</h2>            
+            <form action="" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                
+                <input type="submit" class="button" value="Enviar">
+            </form>           
+        </section>
+    </main>
+    
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Todos os direitos reservados</p>
+        <p>Nelson Almeida de Oliveira</p>
+        <p>almeidanil1979@gmail.com</p>
+    </footer>
+
+    <!-- Script para ajustar a posição do menu de navegação -->
+    <script>
+        window.onload = function() {
+            scrollFunction(); // A função é chamada para ajustar a posição inicial do #links
+        };
+    
+        window.onscroll = function() {
+            scrollFunction();
+        };
+    
+        function scrollFunction() {
+            var linksDiv = document.getElementById("links");
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                linksDiv.style.top = "0";
+            } else {
+                linksDiv.style.top = "60px";
+            }
+        }
+    </script>
+    
+</body>
+
+</html>
