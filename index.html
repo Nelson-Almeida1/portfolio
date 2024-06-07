@@ -1,170 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nelson Almeida de Oliveira</title>
-    <!-- Estilos CSS -->
-    <style>        
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            overflow-x: hidden; /* A barra de rolagem horizontal é ocultada */
-        }
-            
-        header {
-            background-color: #2c3e50;
-            color: #fff;
-            padding: 10px;
-            text-align: center;            
-            width: 100%;
-            height: 60px;
-            top: 0;
-            z-index: 999;
-        }
-            
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-            
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-            
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        
-        main {
-            padding: 70px 20px 20px; 
-            margin-top: 60px; 
-            background-color: #cfdbe5;
-        }
-        
-        section {
-            margin-bottom: 40px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            background-color: #fff; 
-        }
-        
-        .button {
-            background-color: #3498db; 
-            color: #fff; /* Cor do texto */
-            padding: 10px 20px; /* Espaçamento interno */
-            border: none; /* A borda é removida */
-            border-radius: 5px; /* Bordas arredondadas */
-            cursor: pointer; /* O cursor muda ao passar */
-            transition: background-color 0.3s; /* Transição suave de cor de fundo */
-            width: auto; /* Define a largura do botão */
-            max-width: 100%;
-            margin-right: 20px; /* Margem direita para os botões */
-            font-weight: bold; /* Texto em negrito */
-        }
-            
-        .button:hover {
-            background-color: #1e3746; /* Cor de fundo ao passar o mouse */
-        }
-       
-        /* Estilo para o container dos anúncios.Flexbox para organizar os elementos em uma linha flexível.*/
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-            
-        .anuncio_img {
-            width: calc(33.33% - 20px); /*  Define a largura de cada anúncio como um terço do contêiner, com uma margem à direita de 20px. */
-            margin-bottom: 20px;
-        }
-        
-        .anuncio_img-content {
-            text-align: center;
-        }
-            
-        .anuncio_img img {
-            max-width: 30%; 
-            height: auto; /* Permite que a altura da imagem seja ajustada automaticamente para manter a proporção */
-        }
-       
-        .portfolio-button {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        /* Estilo para o parágrafo dentro do botão do portfólio */
-        .portfolio-button p {
-            margin-bottom: 10px;
-        }
-            
-        footer {
-            background-color: #2c3e50; 
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-            
-        #links {            
-            position: fixed;
-            background-color: #2c3e50; 
-            width: 100%;
-            padding: 10px;
-            text-align: center;
-            z-index: 998;
-            transition: top 0.3s;
-        }
-            
-        #links a {
-            color: #fff;
-            text-decoration: none;
-            margin-right: 20px;
-        }
-        
-        #conteudo {
-            margin-top: -10px; /* Compensar a altura do cabeçalho fixo */
-        }
-            
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            display: block;
-            margin-bottom: 10px; 
-            width: calc(50% - 5px); 
-        }
-            
-        input[type="submit"] {
-            width: auto
-            max-width 100%;
-        }
-    
-    </style>
+    <link rel="stylesheet" href="./style.css">
     
 </head>
 <body>    
     <div id="topo"></div>
-    <header>        
-        <h1>Nelson Almeida de Oliveira</h1>            
-    </header>
-    
-    <div id="links">
-        <nav>
-            <ul>
-                <!-- Links de navegação -->
-                <li><a href="#topo">Início</a></li>
-                <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#formacao">Formação Educacional</a></li>
-                <li><a href="#experiencia">Experiência Profissional</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>                
-                <li><a href="#contato">Contato</a></li>                
-            </ul>
+    <header id="header">
+        <a id="logo" href="">Nelson Almeira de Oliveira</a>
+        <nav id="nav">
+          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu" role="menu">
+            <li><a href="#topo">Home</a></li>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#formacao">Formação Educacional</a></li>
+            <li><a href="#experiencia">Experiência Profissional</a></li>            
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
         </nav>
-    </div>
+      </header>
     
     <main id="conteudo">
               
@@ -186,12 +47,22 @@
                     <span>Previsão de Conclusão:</span> Abril de 2025
                 </p>
             </div>
+            
+            <div class="curso">
+                <h3>Montagem e Manutenção de Computadores</h3>
+                <p>
+                    <span>Instituição:</span> Cisco Networking Academy<br>
+                    <span>Curso:</span>Computer Hardware Basics<br>
+                    <span>Data de Conclusão:</span> Setembro de 2023
+                </p>
+            </div>
+            
             <div class="curso">
                 <h3>Ensino Médio Completo</h3>
                 <p>
                     <span>Instituição:</span> Escola Técnica Estadual Rubens de Faria e Souza<br>
                     <span>Curso:</span> Auxiliar Técnico em Mecânica<br>
-                    <span>Data de Conclusão:</span> dezembro de 1997
+                    <span>Data de Conclusão:</span> Dezembro de 1997
                 </p>
             </div>
         </section>
@@ -267,19 +138,10 @@
         </section>       
         
         <section id="contato">
-            <h2>Contato</h2>            
-            <form action="" method="post">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-                
-                <input type="submit" class="button" value="Enviar">
-            </form>           
+            <h2>Contato</h2>
+            <p>Para entrar em contato, envie um e-mail para: 
+            <h4>almeidanil1979@gmail.com</h4>
+            </p>
         </section>
     </main>
     
@@ -289,27 +151,8 @@
         <p>Nelson Almeida de Oliveira</p>
         <p>almeidanil1979@gmail.com</p>
     </footer>
-
-    <!-- Script para ajustar a posição do menu de navegação -->
-    <script>
-        window.onload = function() {
-            scrollFunction(); // A função é chamada para ajustar a posição inicial do #links
-        };
-    
-        window.onscroll = function() {
-            scrollFunction();
-        };
-    
-        function scrollFunction() {
-            var linksDiv = document.getElementById("links");
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                linksDiv.style.top = "0";
-            } else {
-                linksDiv.style.top = "60px";
-            }
-        }
-    </script>
-    
+    <script src="./script.js"></script>
+   
 </body>
 
 </html>
